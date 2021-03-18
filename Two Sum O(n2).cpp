@@ -17,7 +17,6 @@ vector<int> twoSum(vector<int> &a, int &target) {
 }
 int main()
 {
-
 	vector<int> a = {3, 3, 4};
 	int target = 6;
 	for (int &x : twoSum(a, target))
