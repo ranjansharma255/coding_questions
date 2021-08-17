@@ -13,3 +13,5 @@ public:
         return nums.size();
     }
 };
+//Time Complexity: O(N) + O(N)
+//Space Complexity: O(N)

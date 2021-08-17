@@ -12,7 +12,6 @@ public:
             }
         }
         return validSize;
-
     }
 };
 //Time Complexity: O(N)
