@@ -15,3 +15,10 @@ public:
         return s.size();
     }
 };
+
+//Time Complexity is : O(NlogN) + O(N)
+// o(nlogn) n - > for traversing the array and logn - for inserting into set
+// o(n) for inserting from set back to array in worst case if no duplicates is found.
+
+//Space Complexity is : O(N)
+//because extra space for set.
