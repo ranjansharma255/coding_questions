@@ -1,0 +1,47 @@
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int ma = 0;
+        for(int i = 0; i < accounts.size(); i++) {
+            int sum = 0;
+            for(int j = 0; j < accounts[i].size(); j++) {
+                sum += accounts[i][j];
+                ma = max(sum,ma);
+            }
+        }
+        return ma;
+    }
+};
+
+//accounts[i].size() in the second forloop means that for every row (i) we are traversing to its length;
+
+
+//java solution for the problem
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        int ma = Integer.MIN_VALUE;
+        for(int person = 0; person < accounts.length; person++){
+            int sum = 0;
+            for(int account = 0; account < accounts[person].length; account++) {
+                sum += accounts[person][account];
+                ma = Math.max(sum,ma);
+            }
+        }
+        return ma;
+    }
+}
+
+// Enhanced version of the above code
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        int ma = Integer.MIN_VALUE;
+        for(int[] ints: accounts){
+            int sum = 0;
+            for(int value : ints) {
+                sum += value;
+                ma = Math.max(sum,ma);
+            }
+        }
+        return ma;
+    }
+}
