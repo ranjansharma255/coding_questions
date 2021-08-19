@@ -1,5 +1,6 @@
 //Time Complexity: O(N)
 //Space Complexity: O(1)
+Approach is
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
