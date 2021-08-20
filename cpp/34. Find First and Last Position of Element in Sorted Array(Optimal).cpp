@@ -10,6 +10,13 @@ class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int> v = {-1,-1};
+        // we can also do is
+        // v[0] = search(nums, target, true);
+        //if v[0] = -1 then the element doesn't exist and then we need not to find
+        // the value of v[1] which is -1 by default
+        // if(v[0] != -1){
+        //   v[1] = search(nums, target, false);
+        // }
         int start = search(nums, target, true);
         int end = search(nums, target, false);
         v[0] = start;
@@ -48,7 +55,7 @@ public:
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] ans = {-1, -1};
-        // check for first occurrence if target first;
+        // check for first occurrence of target first;
         int start = search(nums, target, true);
         int end = search(nums, target, false);
         ans[0] = start;
