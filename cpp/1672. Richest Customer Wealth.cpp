@@ -5,6 +5,7 @@ public:
         for(int i = 0; i < accounts.size(); i++) {
             int sum = 0;
             for(int j = 0; j < accounts[i].size(); j++) {
+              //accounts[i].size() in the second forloop means that for every row (i) we are traversing to its length;
                 sum += accounts[i][j];
                 ma = max(sum,ma);
             }
@@ -13,10 +14,9 @@ public:
     }
 };
 
-//accounts[i].size() in the second forloop means that for every row (i) we are traversing to its length;
 
 
-//java solution for the problem
+//Java solution for the problem
 class Solution {
     public int maximumWealth(int[][] accounts) {
         int ma = Integer.MIN_VALUE;
