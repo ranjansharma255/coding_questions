@@ -19,11 +19,21 @@ Example 1:
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
-        for y in range(len(nums)):
-            for x in range(y+1,len(nums)):
-                
-                if (nums[y] + nums[x]) == target:
-                    return (y,x) 
+        lis=[]
+        for i in nums:
+            if target-i in nums:
+                if i==(target-i):
+                    if nums.count(i)>=2:
+                        lis.append(nums.index(i))
+                        x=nums.index(i)
+                        lis.append(nums.index(i,x+1))
+                        break
+                    else:
+                        continue
+                else:       
+                    lis.append(nums.index(i))
+                    lis.append(nums.index(target-i))
+                    break
+        return lis
                 
 
