@@ -1,3 +1,5 @@
+https://leetcode.com/problems/remove-element/
+
 //If we find any value other than given value then we shift it to the validSize index making it valid element. Hence removing the occurrence of the given element value;
 class Solution {
 public:

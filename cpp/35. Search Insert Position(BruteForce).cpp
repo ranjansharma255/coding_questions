@@ -1,3 +1,5 @@
+https://leetcode.com/problems/search-insert-position/
+
 // Iterate over every element of the array nums[] and search for integer target.
 // If any array element is found to be equal to target, then print index of target.
 // Otherwise, if any array element is found to be greater than target, print that index as the insert position of target.
