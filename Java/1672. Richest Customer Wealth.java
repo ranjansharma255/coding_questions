@@ -1,3 +1,4 @@
+https://leetcode.com/problems/richest-customer-wealth/
 
 //Java solution for the problem
 class Solution {

@@ -1,3 +1,5 @@
+https://leetcode.com/problems/peak-index-in-a-mountain-array/
+
 // java implementation
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
