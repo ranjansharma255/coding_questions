@@ -25,7 +25,16 @@ void dfs(int vertex) {
 	// section 4
 	// Take action on vertex before exiting the vertex
 }
-
+void printGraph() {
+	int i = 0;
+	for (int i = 0; i <= 8; i++) {
+		cout << "Vertex " << i << " -> ";
+		for (int child : graph[i]) {
+			cout << child << " ";
+		}
+		cout << endl;
+	}
+}
 
 int main() {
 	int n, m;
